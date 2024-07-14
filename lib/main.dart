@@ -1,6 +1,9 @@
 import 'package:flutter/material.dart';
 
-void main() {
+import 'storage.dart';
+
+Future<void> main() async {
+  await Storage.init();
   runApp(const MyApp());
 }
 
